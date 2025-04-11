@@ -17,7 +17,7 @@ function MainComponent() {
             </div>
             <div className="hidden md:block">
               <div className="flex items-center space-x-4">
-                {["HOME", "ABOUT US", "EVENTS", "PROJECTS"].map((item) => (
+                {["HOME", "ABOUT US", "EVENTS", "PROJECTS","JOIN-US"].map((item) => (
                   <button
                     key={item}
                     onClick={() =>
@@ -32,12 +32,6 @@ function MainComponent() {
                     {item}
                   </button>
                 ))}
-                <button
-                  className="px-4 py-2 rounded-md font-sans"
-                  style={{ backgroundColor: "#AED9E0", color: "white" }}
-                >
-                  JOIN US
-                </button>
               </div>
             </div>
           </div>
@@ -47,7 +41,7 @@ function MainComponent() {
       {/* Main Content with padding for fixed nav */}
       <div className="pt-16">
         {/* About GRSS Section */}
-        <section className="py-20 px-4 bg-white">
+        <section className=" px-4 bg-white">
           <div className="max-w-7xl mx-auto">
             <h1 className="text-3xl font-bold mb-8">About GRSS</h1>
             <p className="text-lg mb-12">
@@ -58,9 +52,8 @@ function MainComponent() {
             </p>
           </div>
         </section>
-
         {/* Groups & Initiatives */}
-        <section className="py-20 px-4 bg-gray-50">
+        <section className=" px-4 bg-gray-50">
           <div className="max-w-7xl mx-auto">
             <h2 className="text-2xl font-bold mb-12">Groups & Initiatives</h2>
 
@@ -131,6 +124,13 @@ function MainComponent() {
             </div>
           </div>
         </section>
+        <div className="w-full bg-white">
+    <img
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvFbc5j7ypQpPCfACMA8kV0B-9QQwJYO8dejAUYUuKGZnIQBVmtl6a56E1tX7RLVWulG4&usqp=CAU"
+      alt="GRSS Banner"
+      className="w-full h-auto max-h-[300px] mx-auto"
+    />
+  </div>
 
         {/* Stay Connected Section */}
         <section className="py-12 px-4" style={{ backgroundColor: "#AED9E0" }}>

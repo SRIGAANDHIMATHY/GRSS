@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import Link from "next/link";
 
 function MainComponent() {
   const [email, setEmail] = useState("");
@@ -40,12 +41,6 @@ function MainComponent() {
                     {item}
                   </button>
                 ))}
-                <button
-                  className="px-4 py-2 rounded-md font-sans"
-                  style={{ backgroundColor: "#AED9E0", color: "white" }}
-                >
-                  JOIN US
-                </button>
               </div>
             </div>
           </div>
@@ -71,12 +66,14 @@ function MainComponent() {
           <p className="text-[16px] text-[#D3D3D3] mb-8">
             Serving the global community...
           </p>
+          <Link href="/join-us">
           <button
-            className="px-5 py-2.5 rounded-lg text-white"
-            style={{ backgroundColor: "#2ECC71" }}
+          className="px-5 py-2.5 rounded-lg text-white"
+          style={{ backgroundColor: "#2ECC71" }}
           >
-            Join Now
+          Join Now
           </button>
+          </Link>
         </div>
       </section>
 
@@ -127,7 +124,7 @@ function MainComponent() {
                   "Learn how artificial intelligence is revolutionizing geospatial data analysis and interpretation.",
               },
               {
-                img: "https://ucarecdn.com/48360653-4a4d-40cb-9849-250981578040/-/format/auto/",
+                img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDzdmWwoiCGGH1X6NUxl6rdrTDhpvZ3kVYLQ&s",
                 alt: "Digital technology visualization on laptop",
                 title: "Satellite Data Summit",
                 description:
@@ -168,19 +165,19 @@ function MainComponent() {
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
-                img: "/project-1.jpg",
+                img: "https://elaw.org/wp-content/uploads/2023/10/climate-change-.-jean-bought-rights-from-can-stock-which-no-longer-exists-so-she-confirmed-we-can-use-scaled.jpeg",
                 title: "Climate Change Monitoring",
                 description:
                   "Using advanced satellite data to track global climate patterns and environmental changes over time.",
               },
               {
-                img: "/project-2.jpg",
+                img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2xYhkcdkAM3HUEWz5sGHHlu0tUtjOkR2QtQ&s",
                 title: "Urban Development Analysis",
                 description:
                   "Mapping and analyzing urban growth patterns using remote sensing technology for sustainable city planning.",
               },
               {
-                img: "/project-3.jpg",
+                img: "https://images.unsplash.com/photo-1471922694854-ff1b63b20054?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YmVhY2glMjBvY2VhbnxlbnwwfHwwfHx8MA%3D%3D",
                 title: "Ocean Health Assessment",
                 description:
                   "Monitoring ocean temperatures and ecosystems through satellite imagery to protect marine biodiversity.",

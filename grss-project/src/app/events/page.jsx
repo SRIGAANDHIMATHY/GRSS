@@ -17,7 +17,7 @@ function MainComponent() {
             </div>
             <div className="hidden md:block">
               <div className="flex items-center space-x-4">
-                {["HOME", "ABOUT US", "EVENTS", "PROJECTS"].map((item) => (
+                {["HOME", "ABOUT US", "EVENTS", "PROJECTS","JOIN-US"].map((item) => (
                   <button
                     key={item}
                     onClick={() =>
@@ -32,12 +32,6 @@ function MainComponent() {
                     {item}
                   </button>
                 ))}
-                <button
-                  className="px-4 py-2 rounded-md font-sans"
-                  style={{ backgroundColor: "#AED9E0", color: "white" }}
-                >
-                  JOIN US
-                </button>
               </div>
             </div>
           </div>
