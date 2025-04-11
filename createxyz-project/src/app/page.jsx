@@ -26,7 +26,7 @@ function MainComponent() {
             </div>
             <div className="hidden md:block">
               <div className="flex items-center space-x-4">
-                {["HOME", "ABOUT US", "EVENTS", "_\projects","JOIN-US"].map((item) => (
+                {["HOME", "ABOUT US", "EVENTS", "PROJECTS","JOIN-US"].map((item) => (
                   <button
                     key={item}
                     onClick={() =>
